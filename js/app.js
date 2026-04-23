@@ -188,5 +188,15 @@ function switchTab(tab) {
   console.log("Switching to:", tab);
 }
 
+function signInWithGoogle() {
+  showLandingPage();
+  openAuthCard();
+}
+
+function openAuthCard() {
+  const card = document.getElementById("auth-card");
+  if (card) card.style.display = "block";
+}
+
 // ================= INIT =================
 initAuth();
