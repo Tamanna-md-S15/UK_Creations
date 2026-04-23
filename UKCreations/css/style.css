@@ -98,6 +98,105 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
+.auth-card {
+  margin-top: 1rem;
+  width: min(360px, 92vw);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.auth-title {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+.auth-sub {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  color: var(--text3);
+  font-size: 12px;
+  font-weight: 600;
+}
+.auth-card input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.password-wrap {
+  position: relative;
+}
+.password-wrap input {
+  padding-right: 42px;
+}
+.password-toggle {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.password-toggle:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+.auth-actions {
+  display: flex;
+  gap: 8px;
+}
+.auth-mode-row {
+  display: flex;
+  gap: 8px;
+  margin: 2px 0 10px;
+}
+.auth-mode-btn {
+  flex: 1;
+  border: 1.5px solid var(--border-light);
+  background: #fff;
+  color: var(--text2);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.auth-mode-btn.active {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+.auth-btn {
+  flex: 1;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--orange);
+  color: #fff;
+}
+.auth-btn.secondary {
+  background: #f3f3f3;
+  color: var(--text2);
+}
+
 .login-error {
   margin-top: 1.25rem;
   background: rgba(138, 26, 26, 0.85);
@@ -108,6 +207,10 @@ body {
   font-weight: 600;
   text-align: center;
   max-width: 320px;
+}
+.login-error-mid {
+  margin: 6px auto 10px;
+  max-width: 100%;
 }
 
 /* =============================================
