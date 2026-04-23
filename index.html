@@ -67,10 +67,12 @@
           <div class="auth-mode-row">
             <button type="button" class="auth-mode-btn active" id="auth-mode-login-btn" onclick="setAuthMode('login')">Login</button>
             <button type="button" class="auth-mode-btn" id="auth-mode-signup-btn" onclick="setAuthMode('signup')">First Time Sign Up</button>
+            
           </div>
           <div class="auth-actions">
             <button type="button" class="auth-btn secondary" onclick="closeAuthCard()">Back</button>
             <button type="submit" class="auth-btn" id="auth-submit-btn">Continue</button>
+            <button onclick="sendPasswordLink()">Set Password</button>
           </div>
         </form>
       </div>

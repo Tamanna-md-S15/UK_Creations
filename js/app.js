@@ -197,6 +197,24 @@ function openAuthCard() {
   const card = document.getElementById("auth-card");
   if (card) card.style.display = "block";
 }
+async function sendPasswordLink() {
+  const email = document.getElementById("auth-email").value.trim();
+
+  if (!email) {
+    showToast("Enter your email first", true);
+    return;
+  }
+
+  const { error } = await db.auth.resetPasswordForEmail(email, {
+    redirectTo: window.location.origin
+  });
+
+  if (error) {
+    showToast(error.message, true);
+  } else {
+    showToast("Password setup link sent to your email ✅");
+  }
+}
 
 // ================= INIT =================
 initAuth();
